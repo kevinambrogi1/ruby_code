@@ -1,0 +1,13 @@
+<% r = Random.new
+
+myRandomNumber = r.rand(100)+1
+
+%>
+
+<% if myRandomNumber > 50 && myRandomNumber < 75 %>
+  My random number is greater than 50 and less than 75
+<%else%>
+  My random number is either less than 50 or greater than 75
+<% end %>
+<br>
+<b> <%= myRandomNumber %> </b>

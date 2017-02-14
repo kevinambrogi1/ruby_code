@@ -1,0 +1,74 @@
+// Place all the styles related to the Messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#guestMessage, #guestMessages{
+  width:400px;
+  min-height:150px;
+  text-align:center;
+}
+
+#guestName, #guestNames{
+  width:300px;
+  padding-right:15px;
+  text-align:left;
+}
+
+#message{
+  max-height:100px;
+  overflow:auto;
+  padding:5px;
+}
+
+table{
+  padding:0px;
+  border-spacing:0;
+  border-collapse:collapse;
+}
+#msgTblCntnr{
+  box-shadow: 10px 10px 5px #888;
+  border: 2px solid #888;
+  border-radius:10px;
+  width:720px;
+  padding:10px;
+  background-color:#dfd;
+}
+th{
+  border-bottom: 2px solid #888;
+  background-color:#dfd;
+  font-size:1.5em;
+  padding:15px 15px 5px 15px;
+}
+
+td{
+  width:50px;
+  padding:15px 15px 5px 15px;
+}
+.bubble
+    {
+    position: relative;
+    width: 250px;
+    padding: 15px;
+    background: #efe;
+    margin-left:50px;
+    margin-bottom:20px;
+   border:3px solid #dfd;
+   border-radius:25px;
+  text-align:center;
+  box-shadow: 10px 10px 5px #888;
+  }
+
+  .bubble:after{
+      content: "";
+      position: absolute;
+      top: 40%;
+      bottom:50%;
+      left: -15px;
+      border-style: solid;
+      border-width: 15px 15px 15px 0;
+      border-color: transparent #dfd;
+      display: block;
+      width: 0;
+      z-index: 1;
+     text-align:center;
+  }

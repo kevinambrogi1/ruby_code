@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p id="guestName">
+  <strong>Name:</strong>
+  <%= @message.name %>
+</p>
+
+<p id="guestMessage" class="bubble">
+  <strong>Message:</strong>
+  <%= @message.message %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
