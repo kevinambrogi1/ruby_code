@@ -1,0 +1,17 @@
+<h1>List Survey Replies</h1>
+<% if flash[:notice] %>
+    <div id="notice"><%= flash[:notice] %></div>
+<% end %>
+    <% @results.each do |q| %>
+<p>
+      Survey Results from: <%= q.firstName %> <%= q.lastName %>
+        <%= link_to 'Show', show_url(id: q.id) %>
+        <%= link_to 'Edit', edit_url(id: q.id) %>
+        <%= link_to 'Destroy', delete_url(id: q.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </p>
+    <% end %>
+  
+<br>
+
+<%= link_to 'New Survey', 'new' %>
+

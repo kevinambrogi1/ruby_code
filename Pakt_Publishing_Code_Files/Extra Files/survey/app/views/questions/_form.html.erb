@@ -1,0 +1,12 @@
+<%= form_for @question do |f| %>
+<%= f.label :firstName, 'First Name' %>
+<%= f.text_field :firstName %> <br>
+<%= f.label :lastName, 'Last Name' %>
+<%= f.text_field :lastName %> <br>
+<%= f.label :email, 'Email'%>
+<%= f.text_field :email %> <br>
+<%= f.label :score, 'Rate our products from' %> <strong>1</strong>
+<%= f.range_field :score, :in=>0..10, :step=>'1' %><strong><sup>to</sup> 10</strong><br>
+<%= f.text_area :comment, :cols => 60, :rows => 10 %><br>
+<%= f.submit('Enter Survey')%>
+<% end %>

@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @question.firstName %><%= @question.lastName %><br />
+  <%= @question.email %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  You Rated us a: <%= @question.score %><br>
+  Your Comments:<br />
+<%= @question.comment %><br>
+</p>
+
+ |
+<%= link_to 'Back', questions_path %>
